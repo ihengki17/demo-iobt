@@ -289,7 +289,9 @@ services:
   rest-proxy:
     image: confluentinc/cp-kafka-rest:7.3.0
     depends_on:
-      - broker
+      - broker-central1
+      - broker-central2
+      - broker-central3
       - schema-registry
     ports:
       - 8082:8082
