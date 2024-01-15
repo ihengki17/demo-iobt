@@ -1,0 +1,12 @@
+{
+  "name": "Dummy_data",
+  "config": {
+    "connector.class": "io.confluent.kafka.connect.datagen.DatagenConnector",
+    "tasks.max": "1",
+    "value.converter": "org.apache.kafka.connect.json.JsonConverter",
+    "kafka.topic": "test",
+    "iterations": "1000000",
+    "quickstart": "users",
+    "value.converter.schemas.enable": "false"
+  }
+}
