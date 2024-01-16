@@ -45,7 +45,7 @@ http://<hostname>:9121
 1. Access Control Center
 2. Click Topic on the left side
 3. Click Create topic on the right side
-4. Type the topic name (on this demo we type **test**)
+4. Type the topic name (on this demo we type **new_test**)
 5. Set the partition as 1 and **click create with defaults**
 6. Click connect tab on the left side
 7. Click the connect-default
@@ -54,7 +54,7 @@ http://<hostname>:9121
 10. If all set, click next and launch the connector
 11. If the Connector is running well you'll get a new topic with the message inside the Cluster
    * Click Topics on the left side
-   * Click the topics name (by using the json that has been provide it will be **test**)
+   * Click the topics name (by using the json that has been provide it will be **new_test**)
    * Click **Messages** tab
    * Click the offset bar on the right middle page, type 0 and enter
    * You'll see the message that starting from offset 0 up to now
