@@ -3,10 +3,15 @@
   "config": {
     "connector.class": "io.confluent.kafka.connect.datagen.DatagenConnector",
     "tasks.max": "1",
-    "value.converter": "org.apache.kafka.connect.json.JsonConverter",
-    "kafka.topic": "test",
+    "kafka.topic": "new_test",
     "iterations": "1000000",
     "quickstart": "users",
-    "value.converter.schemas.enable": "false"
+    "key.converter": "org.apache.kafka.connect.storage.StringConverter",
+    "value.converter": "io.confluent.connect.avro.AvroConverter",
+    "key.converter.schemas.enable": "true",
+    "value.converter.schemas.enable": "true",
+    "key.converter.schema.registry.url": "http://schema-registry:8081",
+    "value.converter.schema.registry.url": "http://schema-registry:8081"
   }
 }
+
